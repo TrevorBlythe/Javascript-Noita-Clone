@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>gaming</title>
+    <style>
+      #stage{
+        position: relative;
+        width:900;
+        height:480;
+        
+      }
+      
+
+    </style>
+  </head>
+  <body onkeypress="return keyGotPressed(event)" onkeyup="return keyGotUp(event)" >
+    <h1>nothing</h1>
+
+    <div id="stage">
+          <canvas id="screen" width="1800" height="960" style="border:solid black 5px" hidden></canvas>
+          <canvas id="screen2" width="900" height="480" style="border:solid black 5px" ></canvas>
+          <canvas id="entitiesScreen" width="3600" height="1440" style="border:solid black 5px" hidden></canvas>
+          <h2 id="bombs">bombs: 5</h2>
+          <p id = "feedback">Hello</p>
+
+    </div>
+
+    <div id="buttonContainer">
+      
+    </div>
+    <button onclick="showMap()">Get Map!</button>
+    <p id="outputy"></p>
+    <img src = "Images/blue.png" id="water" hidden>
+  <script src="data.js"></script>
+  <script src="game.js"></script>
+
+  <script src="generator.js"></script>
+  <script src="main.js"></script>
+    
+  </body>
+
+
+
+</html>
+
+
+
+
+
